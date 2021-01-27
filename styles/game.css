@@ -1,0 +1,398 @@
+﻿/*בס"ד*/
+#cranebody {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    z-index:5;
+}
+
+#conveyercontainer {
+    top: 22%;
+    width: 8.9%;
+    position: relative;
+    height: 72%;
+    right: 3.67%;
+    z-index: 5;
+}
+
+#conveyer {
+    z-index: 1;
+   width: 100%;
+}
+
+#hook {
+      top: 13.5%;
+    width: 25%;
+    right: 43.3%;
+    transform: rotateZ(39deg);
+}
+
+#hok {
+    top: 13.5%;
+    width: 8%;
+    right: 40%;
+    border-radius: 100%;
+    height: 1%;
+    border: solid;
+    position: absolute;
+    border-color: #853715;
+}
+
+#cable1 {
+    width: 0%;
+    height: 67%;
+    background-color: #853715;
+    transform: rotateZ(45deg);
+    position: absolute;
+      left: 0%;
+    top: 400%;
+}
+
+#cable2 {
+    width: 0%;
+    height: 67%;
+    background-color: #853715;
+    transform: rotateZ(315deg);
+    position: absolute;
+    top: 400%;
+}
+
+#line {
+    position: relative;
+    background-color: #853715;
+    width: 5%;
+    height: 0%;
+    right: 46%;
+    top: 14%;
+}
+
+
+#circles2 {
+    position: absolute;
+    top: 4vh;
+    width: 12vw;
+    right: 6vw;
+}
+
+#circles1 {
+    position: absolute;
+    top: 4vh;
+    width: 12vw;
+    left: 6vw;
+}
+
+#ContainStones {
+    width: 16vw;
+    height: 9vw;
+    position: absolute;
+    bottom: 20vh;
+    z-index: 5;
+    right: 2vw;
+    transform: rotateZ(180deg);
+}
+
+.stones {
+    background-color: #ca440a;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 2vw;
+    color: #dcdbbc;
+    padding-top: 12%;
+    box-sizing: border-box;
+    position: absolute;
+}
+/*מראה הלבנים*/
+#ContainStones [id^=stn], #conveyercontainer [id^=stn] {
+    width: 3vw;
+    height: 3vw;
+    display: inline-block;
+    transform: rotateZ(180deg);
+    box-shadow: 3px -3px #302625;
+    border: solid;
+    border-color: #302625;
+    border-width: 0.5px;
+    z-index: 2;
+}
+
+#ContainStones #stn5 {
+    margin-right: 1.5vw;
+}
+
+#ContainStones #stn9 {
+    margin-right: 3vw;
+}
+
+img {
+    z-index: 5;
+    position: absolute;
+}
+
+/*כשנבחר כרטיס*/
+.Ichosed {
+    border: solid 0.5vw;
+    border-color: #fffb00;
+    box-sizing: border-box;
+    box-shadow: 0 0 black;
+}
+    .Ichosed > .picturesInWindows{
+        margin-top:-1vw;
+    }
+    /*כרטיס ממוקם*/
+    .Ilocated {
+        border: none;
+        background-color: #ca440a;
+        box-shadow: inset 0px 0px 8px #a5a5a500;
+    }
+
+/*ההגדרות המתווספות לאבן כשקופצת לטרקטור*/
+#conveyercontainer [id^=stn] {
+    width: 100%;
+    position: absolute;
+    height: 14.36%;
+    top: 72.5%;
+    display: inline-block;
+    box-sizing: border-box;
+    transform: rotateZ(360deg);
+    display: block;
+}
+    /*.ontractor>*/
+    #conveyercontainer [id^=stn] > div:first-child {
+        padding-top: 23%;
+    }
+
+/*גילוי הצורות*/
+[id^=board] .Cards {
+    transform: rotateY(0deg);
+}
+/*תפריטים*/
+nav {
+    background-color: #507481;
+    position: fixed;
+    height: 80vh;
+    width: 25vh;
+    transition: 0.5s;
+    overflow-y: hidden;
+    top: 0;
+    right: -25vh;
+    z-index: 8;
+}
+div[id^=open] {
+    position: fixed;
+    right: 0vh;
+    height: 5vh;
+    width: 5vh;
+    transition: 0.5s;
+    background-size: cover;
+    z-index: 4;
+}
+
+#openBoardMenu {
+    background-image: url('../pictures/איקון 1.JPG');
+    top: 5vh;
+}
+
+#openToolsMenu {
+    top: 11vh;
+    background-image: url('../pictures/איקון 2.JPG');
+}
+
+p:hover, p:focus {
+    color: #f1f1f1;
+}
+
+p {
+    cursor: pointer;
+    text-align: center;
+    font-size: 2.5vh;
+    font-family: Tahoma;
+    margin-block-start: 3vh;
+    margin-block-end: 3vh;
+    -webkit-margin-before: 3vh;
+    -webkit-margin-after: 3vh;
+}
+#containsLists {
+    bottom: 0vh;
+    position: absolute;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+
+#keyboard {
+    position: absolute;
+    right: 7%;
+    top: 6.5vh;
+    height: 4.5vw;
+    width: 4.5vw;
+}
+
+div[id^=move] {
+    background-color: #847777;
+    width: 1vw;
+    height: 1.75vw;
+    z-index: 6;
+    position: absolute;
+    box-shadow: inset 0px -5px 15px 0px #ab998f;
+}
+
+    div[id^=move]::after {
+        position: relative;
+        display: inline-block;
+        content: "";
+        border: solid;
+        border-color: transparent transparent #847777 transparent;
+        border-width: 1vw;
+        top: -1.5vw;
+        left: 0.5vw;
+    }
+    div[id^=move]:hover {
+        box-shadow: inset 0 0 4px 1px #6e5c5a;
+    }
+
+#moveUp {
+    right: 1.75vw;
+    top: -0.5vw;
+}
+
+#moveDown {
+    right: 1.75vw;
+    top: 3.25vw;
+    transform: rotate(180deg);
+}
+
+#moveRight {
+    top: 1.4vw;
+    transform: rotate(90deg);
+    right: -0.15vw;
+}
+
+#moveLeft {
+    top: 1.4vw;
+    right: 3.65vw;
+    transform: rotate(270deg);
+}
+
+#replace {
+    top: 1.75vw;
+    right: 1.75vw;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    background-color: #847777;
+    position: absolute;
+}
+
+    #replace:hover {
+        transform: scale(1.2);
+    }
+
+/*scrollbar styles*/
+::-webkit-scrollbar {
+    width: 1vh;
+}
+
+::-webkit-scrollbar-button {
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    height: -15vh;
+    background: rgb(191, 208, 220);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+/*tooltips styles*/
+/* Tooltip container */
+.tooltip {
+
+}
+
+/* Tooltip text */
+/*.tooltip*/ .tooltiptext {
+      visibility: hidden;
+    width: 20vh;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    padding-top: 0.5vh;
+    right: 1.5vh;
+    height: 2vh;
+    top: auto;
+ 
+    font-size: 1.15vh;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+/*לבחירת צבע*/
+input[type="color"] {
+    -webkit-appearance: none;
+    border: solid #dddddd 0.5vh;
+    width: 20vh;
+    margin-top: 2vh;
+    height: 5vh;
+    /* border-width: 0.5vh; */
+    margin-right: 1.5vh;
+}
+/*//עדכון*/
+input[type="range"] {
+    cursor: pointer;
+    -webkit-appearance: button;
+    width: 24px;
+}
+/*#instruction {
+    z-index: 12;
+    width: 100%;
+    height:100%;
+}*/
+#instruction {
+    height: 80vh;
+    width: 100vw;
+    overflow: auto;
+    overflow-x: hidden;
+    z-index: 14;
+    position: absolute;
+     right: 0;
+    bottom: 20vh;
+}
+    #instruction img {
+        width: 100%;
+        margin: auto;
+        z-index: 12;
+        position: relative;
+    }
+.OpenGame {
+    right: 87vw;
+    top: -2vh;
+}
+
+#F5note {
+    z-index: 15;
+    left: 6vh;
+    bottom: 20vh;
+    height: 55%;
+}

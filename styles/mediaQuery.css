@@ -1,0 +1,90 @@
+﻿/*בס"ד*/
+@media only screen and (min-width:360px)and (max-width:540px) {
+    .building {
+        width: 36vw;
+        height: 108vw;
+    }
+
+    .bigblock::after, .bigblock2::after {
+        margin: 3vw;
+        width: 12vw;
+        height: 12vw;
+    }
+
+    .block {
+        width: 18vw;
+        height: 18vw;
+    }
+
+    .numbers {
+        padding-right: 7.5vw;
+        font-size: 3vw;
+    }
+
+    .t2 {
+        margin: 3vw;
+        width: 12vw;
+        height: 12vw;
+        font-size: 3vw;
+    }
+
+    .bigblock2 .t2:hover {
+        margin-top: 1.5vw;
+    }
+
+    .bigblock2 .Ilocated:hover {
+        margin-top: 1vw;
+    }
+
+    .bigblock div[id^=stn], #board3 .t1 {
+        width: 18vw;
+        height: 18vw;
+        font-size: 1vw;
+    }
+
+    #board2 {
+        right: 55vw;
+    }
+
+    #board1 {
+        right: 9vw;
+    }
+
+
+    #crane {
+        display: none;
+    }
+
+    .picturesInWindows {
+        height: 9.6vw;
+        margin-top: 0;
+    }
+
+    #ContainStones {
+        width: 32vw;
+        height: 18vw;
+        bottom: 11vh;
+        right: 3vw;
+    }
+
+        #ContainStones [id^=stn] {
+            width: 6vw;
+            height: 6vw;
+        }
+
+    .stones {
+        font-size: 4vw;
+    }
+
+    #ContainStones #stn5 {
+        margin-right: 3vw;
+    }
+
+    #ContainStones #stn9 {
+        margin-right: 6vw;
+    }
+
+    #keyboard {
+        position: absolute;
+    }
+}

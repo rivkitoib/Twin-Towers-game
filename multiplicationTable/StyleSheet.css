@@ -1,0 +1,187 @@
+﻿body {
+     background-color: #8ac0dc;
+}
+td {
+    width: 5vh;
+    text-align: center;
+  
+    color: white;
+    height: 5vh;
+    font-size: 3vh;
+    border:solid transparent;
+    z-index:3;
+  border-radius:50%;
+}
+td:first-child, tr:first-child > td {
+      background-color: #030804;
+  
+}
+
+table {
+    background-color: #1f6731;
+    margin: 0;
+    margin-left: calc(50vw - 43vh);
+    border: solid 14px #a57639;
+    padding: 16px;
+    box-shadow: 1px 0px 9px 3px #a6a79e;
+    z-index:2;
+}
+
+/*הכופלים*/
+element.style  {
+        border: solid #af1c1c;
+    border-radius: 50%;
+    background-color: #af1c1c;
+}
+/*המכפלה*/
+
+element.style {
+    border: solid #FFEB3B;
+    border-radius: 50%;
+    background-color: yellow;
+    color: black;
+}
+#imgBooks{
+    height: 50vh;
+    position: absolute;
+    bottom: 0;
+   z-index:-5;
+}
+
+img{
+    height:100%;
+   
+}
+h1{
+    
+    
+    text-align:center;
+    font-size:4vh;
+}
+div[id^="tabs-"]{
+    background-color: #1783ba;
+    position: absolute;
+    bottom: 0;
+    height: 80%;
+    width: 100%;
+    background-color: #335769;
+         box-sizing: border-box;
+}
+#tabs{
+        position: absolute;
+    height: 30vh;
+       width: 30vh;
+    bottom: 35vh;
+    right: 2vw;
+    z-index:1;
+}
+div[id^="tabs-"],li{
+        /*border: solid white 2px;*/
+      
+}
+li{
+    padding-top: 5%;
+       background-color:#335769;
+   
+    height: 20%;
+    width: 50%;
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 0;
+}
+li:first-child{
+    right:0;
+}
+li:nth-child(2){
+    left:0;
+}
+/*צבע שונה ללשונית הפעילה*/
+.ui-widget-header .ui-state-active {
+      background: #1783ba;
+    }
+a{
+  text-decoration-line: none;
+  font-size: 3vh;
+}
+h1,a{
+    color:white;
+    font-family:AhlaB;
+}
+a:focus{
+    outline:none;
+}
+button{
+    position: absolute;
+    bottom: 10%;
+    height: 16%;
+    /* margin: auto; */
+    background-color: #fcb640;
+    color: white;
+    border: none;
+    left: 35%;
+    width: 30%;
+    font-size: 2vh;
+    border-radius: 2vh;
+}
+div input{
+    position: absolute;
+    height: 30%;
+    width: 30%;
+    left: 35%;
+    bottom: 35%;
+    font-size: 3vh;
+    text-align: center;
+}
+p{
+        text-align: center;
+    padding-top: 1vh;
+    font-size: 2vh;
+    color: white;
+}
+/*עיצוב לבר מהירות
+
+*/
+div span{
+        left: 50.2146%;
+    background-color: red;
+    height: 100%;
+    width: 10%;
+    position: absolute;
+}
+ #slider > div{
+         width: 50.2146%;
+    background-color: yellow;
+    height: 100%;
+    position: absolute;
+ }
+ #slider{
+         background-color: #6b410c;
+    position: absolute;
+  
+    height: 2vh;
+    width: 40vw;
+    left: 30vw;
+ }
+#amount {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-weight: 900;
+    width: 3vw;
+    font-size: 2vh;
+}
+#stop {
+    height: 17%;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+}
+#exer {
+    font-size: 3vh;
+    margin-left: -30%;
+}
+label{
+    font-size:2.5vh;
+    font-weight:900;
+}

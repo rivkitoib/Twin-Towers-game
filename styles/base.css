@@ -1,0 +1,19 @@
+﻿/*בס"ד*/
+#crane {
+    width: 50vw;
+    height: 43.03vw;
+    max-height: 81.2826vh;
+    max-width: 94.44vh;
+    z-index: 5;
+    position: absolute;
+    bottom: 20vh;
+    left: 22vw;
+}
+
+#traktor1 {
+    position: absolute;
+    transform: rotateY(180deg);
+    bottom: 0px;
+    height: 50%;
+    left: 84%;
+}

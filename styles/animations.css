@@ -1,0 +1,108 @@
+﻿/*בס"ד*/
+
+.firework {
+    z-index: 2;
+    position: absolute;
+}
+/*אנימציות של המנוף*/
+.hookAnimate {
+    animation-name: hookDown;
+    animation-duration:0.9s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+.lineAnimate {
+    animation-name: hookLong;
+    animation-duration: 0.9s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+.cablesAnimate{
+    animation-name: longCables;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+@keyframes hookLong {
+  
+    to {
+        height: 51%;
+    }
+}
+      
+@keyframes hookDown{
+  
+    to {
+           top: 64.5%;
+           
+    }
+
+}
+@keyframes longCables{
+    to{width:773%;}
+}
+
+.hookAnimateBack {
+    animation-name: hookUp;
+    animation-duration:0.8s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.lineAnimateBack {
+    animation-name: hookShort;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.cablesAnimateBack {
+    animation-name: shortCables;
+    animation-duration: 0.75s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes hookUp {
+    to {
+        top: 13.5%;
+    }
+}
+@keyframes hookShort {    
+    to {
+        height: 0%;
+    }
+}
+@keyframes shortCables {
+   from{
+       width:773%;
+   }
+    to {
+        width: 0%;
+    }
+}
+/*תזוזת המנוף*/
+.containerAnimate {
+    animation-name: conBack;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes conBack{
+    to {
+        right: 3.67%;
+    }
+}
+/*לבדיקה*/
+.QHover {
+    animation-name: bigQuastions;
+    animation-direction: alternate;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+@keyframes bigQuastions {
+    to {
+        height: 6vw;
+        width: 6vw;
+    }
+}

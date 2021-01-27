@@ -1,0 +1,126 @@
+﻿/*בס"ד"*/
+body {
+    font-family: Tahoma;
+}
+
+.enterWord {
+    margin-right: 1vw;
+    border-width: 0.5vw;
+    border-style: inset;
+    width: 12vw;
+    margin-top: 10vh;
+    right: 39.7vw;
+    height: 4vw;
+    position: relative;
+    display: inline-block;
+     z-index: 10;
+}
+
+
+#Q {
+       border-color: #48676a;
+    background-color: #48676a36;
+}
+
+#A {
+      border-color: #ca440a;
+    background-color: #ca440a30;
+}
+
+#next {
+    position: absolute;
+       border: solid 2vw #f4f7fa;
+       border-color: transparent #c3c3c3 transparent transparent;
+    right: 15vw;
+}
+
+    #next:hover {
+        border: solid 2.1vw #f4f7fa;
+        border-color: transparent #85a2b8 transparent transparent;
+    }
+
+#pre {
+    position: absolute;
+    border: solid 2vw #f4f7fa;
+    border-color: transparent transparent transparent #c3c3c3;
+    right: -7vw;
+    display: none;
+}
+
+    #pre:hover {
+        border: solid 2.1vw #f4f7fa;
+        border-color: transparent transparent transparent #85a2b8;
+        right: -7.2vw;
+    }
+
+.correntPair {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.00)
+}
+
+    .correntPair:hover, .correntPair:focus {
+        outline-width: 0px;
+    }
+
+
+:focus {
+    outline: none;
+}
+
+p[contenteditable=true] {
+    font-size: 1.5em;
+    cursor: inherit;
+    text-align: center;
+    color: #bbbbbb;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+#title {
+    color: #ff0505;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+#list input {
+    background-color: #ffffff00;
+    width: 100%;
+    border: none;
+    text-align: center;
+}
+
+#list > div > div {
+    text-align: center;
+    color: #85a1b7;
+}
+
+#list > div {
+    display: inline-block;
+    width: 48%;
+    padding-top: 3vw;
+    height: 100%;
+}
+
+#traktor1 {
+    right: 0;
+    bottom: 20vh;
+    height: 21.7vw;
+}
+
+#list {
+    width: 30vw;
+    background-color: #fffefead;
+    height: 43vh;
+    position: absolute;
+    left: 30vw;
+    bottom: 20vh;
+}

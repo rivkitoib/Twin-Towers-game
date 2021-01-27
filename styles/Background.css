@@ -1,0 +1,527 @@
+﻿/*בס"ד*/
+body {
+    /*background-color: #d4f2e8;*/
+    background: #c9dbe9;
+    background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+    background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
+    background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+    height: 100vh;
+}
+/*הגדרות עיצוב לאדמה*/
+#ground {
+    background-color: #d0bdb6;
+    height: 20vh;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+#block2::before {
+    background-color: #d0bdb6;
+    position: relative;
+    width: 19vw;
+    display: inline-block;
+    content: "";
+    height: 2.5vh;
+    border-radius: 1.25vh;
+    float: left;
+}
+
+#block2::after {
+    background-color: #d0bdb6;
+    position: relative;
+    width: 19vw;
+    display: inline-block;
+    content: "";
+    height: 2.5vh;
+    float: right;
+    border-radius: 1.25vh;
+}
+
+#block1 {
+    width: 91vw;
+    background-color: #6e5c5a;
+}
+
+#block2 {
+    width: 94vw;
+    height: 2.5vh;
+}
+
+#block3 {
+    width: 62vw;
+}
+
+#block4 {
+    width: 50vw;
+    height: 2.5vh;
+}
+
+    #block4::before {
+        background-color: #d0bdb6;
+        position: relative;
+        width: 14vw;
+        display: inline-block;
+        content: "";
+        height: 2.5vh;
+        border-radius: 1.25vh;
+        float: left;
+    }
+
+    #block4::after {
+        background-color: #d0bdb6;
+        position: relative;
+        width: 6vw;
+        display: inline-block;
+        content: "";
+        float: right;
+        height: 2.5vh;
+        border-radius: 1.25vh;
+    }
+
+#YellowBlock {
+    background-color: #fcd793;
+    width: 31vw;
+    position: absolute;
+    top: 1.25vh;
+    right: 42vw;
+}
+
+#mustardBlock {
+    background-color: #ebad48;
+    width: 14vw;
+    position: absolute;
+    top: 2.25vh;
+    left: 32vw;
+}
+
+    #mustardBlock::before {
+        background-color: #e5ab4a;
+        position: absolute;
+        width: 7vw;
+        display: inline-block;
+        content: "";
+        left: 16vw;
+        height: 3vh;
+        border-radius: 1.25vh;
+    }
+
+#block5 {
+    width: 38vw;
+    margin-left: 37vw;
+}
+
+.blocksGrounds {
+    border-radius: 1.25vh;
+    background-color: #ab998f;
+    height: 3vh;
+    margin: auto;
+}
+/*מקבע את האדמה*/
+.background {
+    position: fixed;
+}
+/*בנינים ברקע*/
+#building1 {
+    height: 25vw;
+    /*background-color: #a3c9be;*/
+    background-color: #7192abd4;
+    right: 17vw;
+    z-index: -30;
+}
+
+#building2 {
+    height: 14vw;
+    /*background-color: #b6ded5;*/
+    background-color: #a6cdec;
+    right: 24vw;
+    z-index: -20;
+}
+
+#building3 {
+    height: 10vw;
+    background-color: #a6cdec;
+    right: 57vw;
+    z-index: -10;
+}
+
+    #building2::before, #building3::before {
+        bottom: 5vw;
+        /* border: #ec0245; */
+        /* background-color: #000000; */
+        /* right: 28vw; */
+        content: " ";
+        position: relative;
+        display: inline-block;
+        border-style: solid;
+        border-width: 2.5vw 5vw;
+        border-color: transparent transparent #a6cdec transparent;
+    }
+
+#building4 {
+    height: 18vw;
+    background-color: #7192abd4;
+    right: 64vw;
+    z-index: -40;
+}
+
+    #building4::before {
+        content: "";
+        height: 18vw;
+        width: 3.5vw;
+        background-color: #a1b5c3;
+        position: absolute;
+        display: inline-block;
+        /* border: blue; */
+        float: right;
+        position: relative
+    }
+
+.buildings {
+    bottom: 20vh;
+    width: 10vw;
+}
+
+.building {
+    width: 21vw;
+    height: 28vw;
+    position: absolute;
+    bottom: 20vh;
+}
+/*חלונות לבנינים ברקע*/
+.window {
+    background-color: #a5aeb7;
+    /* border-style: solid; */
+    /*border-width: 65% 51%*/
+    margin: auto;
+    margin-top: 11%;
+    width: 19%;
+    height: 12%;
+}
+
+/*לוחות המשחק*/
+.block {
+    width: 7vw;
+    height: 7vw;
+    display: inline-flex;
+}
+
+.bigblock {
+    background-color: #dcdbbc;
+}
+
+.bigblock2 {
+    background-color: #ca440a;
+}
+/*חלונות לשאלות והתשובות*/
+
+.block::after {
+    content: "";
+    display: block;
+    position: relative;
+    margin: 1.05vw;
+    width: 4.9vw;
+    height: 4.9vw;
+}
+/*מספור כרטיסי השאלות*/
+.numbers {
+    position: absolute;
+    padding-right: 3.25vw;
+    padding-top: 0vw;
+    font-size: 1vw;
+    color: white;
+}
+/*אלמנט להכלת כרטיסי המשחק*/
+.t2 {
+    width: 4.9vw;
+    height: 4.9vw;
+    margin: 1.05vw;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 1vw;
+    padding-top: 1vw;
+    font-family: Tahoma;
+    background-color: white;
+    box-shadow: inset 4px 4px 11px 1px black;
+}
+
+.bigblock .t2 {
+    background-color: #00000030;
+}
+
+.bigblock2 .t2:hover {
+    transform: scale(1.25);
+    box-shadow: 0 0 black;
+    background-color: #ffffff;
+    margin-top: 1.5vw;
+}
+
+.bigblock2 .Ilocated:hover {
+    transform: scale(1);
+    box-shadow: 0 0 black;
+    background-color: #ca440a;
+    margin-top: 1vw;
+}
+/*אלמנט להכלת הצורות בלוח המשחק*/
+/*.t1*/
+/*הגדרות לצורה הנקלטת בלוח*/
+.bigblock div[id^=stn], #board3 .t1 {
+    width: 7vw;
+    height: 7vw;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    font-size: 1vw;
+}
+/*צבע הבנין בניצחון*/
+#board3 .Cards {
+    background-color: #b3b299;
+}
+
+#board2 {
+    right: 71vw;
+    z-index: 7;
+}
+
+#board1 {
+    right: 39vw;
+    transform: perspective();
+}
+
+.picturesInWindows {
+    height: 3.92vw;
+    margin: auto;
+    /* top: 10%; */
+    position: relative;
+    margin-top: -0.49vw;
+}
+/*דיו שיקלוט את הצורה בלוח*/
+.placeToAns {
+    display: none;
+}
+
+#crane {
+    width: 50vw;
+    height: 43.03vw;
+    max-height: 81.2826vh;
+    max-width: 94.44vh;
+    position: absolute;
+    bottom: 20vh;
+    left: 22vw;
+}
+
+#traktor1 {
+    position: absolute;
+    transform: rotateY(180deg);
+    bottom: 0px;
+    height: 50%;
+    left: 84%;
+}
+
+button {
+    background-color: #6e5c5a;
+    color: white;
+    height: 4vh;
+    border-radius: 1.25vh;
+    font-family: Tahoma;
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s;
+    margin-left: 1vw;
+}
+button:disabled {
+        background-color: #d0bdb6;
+    }
+
+button:hover:enabled {
+        outline: none;
+        transform: scale(1.2);
+        background-color: #e5ab4a;
+    }
+
+#buttons {
+    position: absolute;
+    bottom: 4vh;
+    z-index: 4;
+    left: 8vw;
+}
+
+#note {
+    height: 40%;
+    BACKGROUND-COLOR: #c75d2e;
+    position: relative;
+    bottom: 34%;
+    right: 5%;
+    z-index: 10;
+    width: 50%;
+    display: none;
+    animation-name: open;
+    animation-fill-mode: forwards;
+    animation-duration: 0.8s;
+    box-shadow: 0 0 17px 4px #c79e2e;
+}
+
+    #note p {
+        font-size: 2vw;
+    }
+
+        #note p:first-child {
+            padding-top: 11%
+        }
+
+span {
+    text-align: center;
+    font-size: 1.8vw;
+    font-family: Tahoma;
+    display: block;
+    padding-top: 13%;
+}
+
+#name {
+    height: 3.5vw;
+    width: 70%;
+    margin-right: 14%;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+#ifWantNew p {
+    display: inline-block;
+    margin-right: 6vw;
+}
+
+#backSymbol {
+    display: block;
+    position: absolute;
+    left: 0.5vw;
+    bottom: 0.5vw;
+    margin: 0;
+}
+
+#dark {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0);
+    z-index: 8;
+    right: 0;
+    top: 0;
+    display: none;
+    animation-name: bedark;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+}
+
+@keyframes bedark {
+    from {
+        background-color: rgba(0,0,0,0);
+    }
+
+    to {
+        background-color: rgba(0,0,0,0.84);
+    }
+}
+
+@keyframes redark {
+    from {
+        background-color: rgba(0,0,0,0.84);
+    }
+
+    to {
+        background-color: rgba(0,0,0,0);
+    }
+}
+
+@keyframes open {
+    from {
+        transform: scaleX(0)
+    }
+
+    to {
+        transform: scaleX(1)
+    }
+}
+/*לסיבוב תלת המימד*/
+#container {
+    width: 21vw;
+    height: 28vw;
+    position: absolute;
+    bottom: 20vh;
+    perspective: 1000px;
+    will-change: transform;
+    right: 71vw;
+    display: none;
+}
+
+.sides {
+    width: 21vw;
+    background-color: red;
+    height: 28vw;
+    bottom: 0;
+    position: absolute;
+    background-image: url('../pictures/בית.JPG');
+    background-attachment: inherit;
+    background-repeat: round;
+}
+
+#cube {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    transform: rotateY( 0deg ) translateZ(-10.5vw );
+}
+
+@keyframes spin {
+    0% {
+        transform: translateZ(-10.5vw ) rotateY( 0deg );
+    }
+
+    100% {
+        transform: translateZ(-10.5vw ) rotateY(900deg );
+    }
+}
+
+#cube .front {
+    transform: rotateY( 0deg ) translateZ( 10.5vw );
+    position: unset;
+}
+
+#cube .back {
+    transform: rotateY( 180deg ) translateZ( 10.5vw );
+    bottom: 0;
+}
+
+#cube .right {
+    transform: rotateY( 90deg ) translateZ( 10.5vw );
+}
+
+#cube .left {
+    transform: rotateY( -90deg ) translateZ( 10.5vw);
+}
+
+@keyframes spinBack {
+    0% {
+        transform: translateZ(-10.5vw ) rotateY( 900deg );
+    }
+
+    100% {
+        transform: translateZ(-10.5vw ) rotateY(1080deg );
+    }
+}
+#sh1{
+    width: 8vw;
+    bottom: 0;
+right:-15vw;
+}
+#sh2{
+    width: 8vw;
+    bottom: 0;
+left:-8vw;
+}

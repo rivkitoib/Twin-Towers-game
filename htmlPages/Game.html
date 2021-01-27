@@ -1,0 +1,138 @@
+﻿
+<!DOCTYPE html>
+<!-- בס"ד -->
+<!--Offset
+מיקום של אלמנט ביחס לדף-->
+
+<html>
+<head>
+    <link href="../styles/Cards.css" rel="stylesheet" />
+    <link href="../styles/Background.css" rel="stylesheet" />
+    <link href="../styles/game.css" rel="stylesheet" />
+    <link href="../styles/animations.css" rel="stylesheet" />
+    <link href="../styles/clouds.css" rel="stylesheet" />
+    <link href="../styles/mediaQuery.css" rel="stylesheet" />
+    <script src="../scripts/game.js"></script>
+    <script src="../scripts/load.js"></script>
+    <script src="../scripts/base.js"></script>
+    <script src="../scripts/firework.js"></script>
+    <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111">
+    <meta charset="utf-8" />
+    <title>מגדלי התאומים</title>
+    <link rel="icon" href="../pictures/tractor2.png" type="image/x-icon" />
+</head>
+<body dir="rtl" onload="load(),_l = 't';">
+    <div id="dark"></div>
+    
+        <!--<h1 id="timer" hidden="hidden" class="firework">16d 23h 17m 43s </h1>-->
+        <canvas id="canvas" width="100" height="100"class="firework">ttt</canvas><div id="grid-container"class="firework"></div>  
+    <script src="../scripts/firework.js"></script>
+    <!--Steps:
+    1. create the clouds onkeydown="moveValues()"
+    2. Animate them to move across the screen
+    3. Stylize the clouds(can be done as step #2 also)
+    -->
+    <!--<div id="clouds">-->
+    <div class="cloud x1"></div>
+    <div class="cloud x2"></div>
+    <div class="cloud x3"></div>
+    <div class="cloud x4"></div>
+    <div class="cloud x5"></div>
+    <!--</div>-->
+    <div id="crane">
+        <img src="../pictures/crane.png" id="cranebody" />
+        <div id="conveyercontainer">
+            <img src="../pictures/conveyer.png" id="conveyer" />
+            <div id="line"></div>
+            <!--<img src="pictures/hook.png" id="hook" />-->
+            <div id="hok">
+                <div id="cable1"></div>
+                <div id="cable2"></div>
+            </div>
+        </div>
+        <img src="../pictures/tractor1.png" id="traktor1" />
+        <div id="note">
+            <p onclick="fix()">תיקון</p>
+            <p onclick="solution()">הצג פתרון</p>
+            <p onclick="clearBoard()">נקה הכל</p>
+        </div>
+    </div>
+
+
+    <div data-group="viewbuildings">
+        <div class="background buildings" id="building1">
+            <div class="window"></div>
+            <div class="window"></div>
+            <div class="window"></div>
+            <div class="window"></div>
+        </div>
+        <div class="background buildings" id="building2"></div>
+        <div class="background buildings" id="building3"></div>
+        <div class="background buildings" id="building4"></div>
+    </div>
+
+    
+    <nav id="ToolsMenu"  class="menu"onmouseleave="closeNav('Tools')">
+
+        <div id="openToolsMenu" onmouseover="openNav('Tools')"></div>
+        <div style="border-radius:100%">  <input type="color" onchange="myColors('1')" value="#ffff00" /></div>
+        <input type="color" onchange="myColors('2')" value="#ff8080" />
+        <input type="color" onchange="myColors('3')" value="#408080" />
+        <p id="checkingInput"> בקרה מידית<br/>
+            <input type="range" min="0" max="1" value="0" />
+        </p>
+    </nav>
+    <nav id="BoardMenu" class="menu" onmouseleave="closeNav('Board')">
+        <div id="openBoardMenu" onmouseover="openNav('Board')"></div>
+
+        <div id="containsLists">
+            <p onclick="newBoard()" class="tooltip">
+                לוח חדש
+                <span class="tooltiptext" style="top:6vh">ליצירת משחק מותאם אישית</span>
+            </p>
+            <div id="knownPlayerList"></div>
+            <div id="BaseList"></div>
+            
+        </div>
+
+
+    </nav>
+
+
+    <div id="buttons">
+        <button onclick="hint()">רמז</button>
+        <button onclick="Regret()">בטל פעולה אחרונה</button>
+        <button onclick="finish()">סיימתי</button>
+    </div>
+    <div class="background" id="ground">
+        <div id="keyboard">
+            <div id="moveUp" onclick="moveValueCreane(38)"></div>
+            <div id="moveDown" onclick="moveValueCreane(40)"></div>
+            <div id="moveRight" onclick="moveValueCreane(39)"></div>
+            <div id="moveLeft" onclick="moveValueCreane(37)"></div>
+            <div id="replace" onclick="moveValueCreane(13)"></div>
+        </div>
+        <div class="blocksGrounds" id="block1"></div>
+
+        <div class="blocksGrounds" id="block2"></div>
+        <div class="blocksGrounds" id="block3"></div>
+        <div class="blocksGrounds" id="block4"></div>
+        <div class="blocksGrounds" id="block5"></div>
+        <div class="blocksGrounds" id="YellowBlock"></div>
+        <div class="blocksGrounds" id="mustardBlock"></div>
+        <img id="circles1" src="../pictures/circles1.png" />
+        <!--<img id="circles2" src="pictures/circles2.png"/>-->
+    </div>
+    <div id="board1" class="building"></div>
+    <div id="board2" class="building"></div>
+    <div id="container">
+        <div id="cube">
+            <div id="rt" class="right sides"></div>
+            <div id="board3" class="building back"> <!--hidden="hidden"--></div>
+            <div class="left sides"></div>
+        </div>
+    </div>
+
+    <div id="ContainStones"></div>
+</body>
+</html>
